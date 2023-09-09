@@ -35,7 +35,7 @@ stage('Build Docker Image') {
                 }
             }
         }
-    }
+    
     stage ('DeployToProduction') {
     when {
         branch 'master'
@@ -56,5 +56,6 @@ stage('Build Docker Image') {
             }
         }
     }
+}
 }
 }
